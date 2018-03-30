@@ -5,7 +5,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
-import com.example.liba.showLibAFromA
+import com.example.liba.showLibBFromA
+import com.example.libb.showLibBFromB
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         mBtnToast = this.findViewById(R.id.btn_main)
 
         mBtnToast.setOnClickListener {
-            toast(this@MainActivity, showLibAFromA())
+            toast(this@MainActivity, showLibBFromB())
         }
     }
 }
@@ -25,3 +26,4 @@ class MainActivity : AppCompatActivity() {
 fun toast(context: Context, msg: String) {
     Toast.makeText(context.applicationContext, msg, Toast.LENGTH_SHORT).show()
 }
+
