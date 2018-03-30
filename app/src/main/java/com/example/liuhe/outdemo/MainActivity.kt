@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import com.example.liba.showLibBFromA
-import com.example.libb.showLibBFromB
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         mBtnToast = this.findViewById(R.id.btn_main)
 
         mBtnToast.setOnClickListener {
-            toast(this@MainActivity, showLibBFromB())
+            toast(this@MainActivity, showLibBFromA())
         }
     }
 }

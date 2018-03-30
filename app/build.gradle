@@ -20,12 +20,11 @@ android {
 }
 
 repositories {
+    mavenCentral()
     flatDir {
         dirs 'aars'
     }
-    mavenCentral()
 }
-
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
